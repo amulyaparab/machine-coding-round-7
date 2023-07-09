@@ -47,3 +47,25 @@
   height: 300px;
   border-radius: 10px;
 }
+.detail {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  gap: 2rem;
+}
+.image {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+span {
+  color: #5d3fd3;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+a {
+  color: blanchedalmond;
+  text-decoration: none;
+}
