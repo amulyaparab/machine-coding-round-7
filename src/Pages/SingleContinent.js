@@ -3,11 +3,12 @@ import { data } from "../Database/data";
 
 export const SingleContinent = () => {
   const { continentId } = useParams();
+  const navigate = useNavigate();
+
   const findContinent = data.continents.find(
     (continent) => continent.id === Number(continentId)
   );
 
-  const navigate = useNavigate();
   return (
     <>
       <i class="fa-solid fa-arrow-left arrow" onClick={() => navigate("/")}></i>

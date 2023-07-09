@@ -3,6 +3,7 @@ import { data } from "../Database/data";
 
 export const Continents = () => {
   const navigate = useNavigate();
+
   return (
     <>
       <h1>Welcome to Trip Advisor</h1>
@@ -11,7 +12,6 @@ export const Continents = () => {
         {data.continents.map(({ id, name, image }) => (
           <div
             className="image-divs"
-            // onClick={() => dispatch({ type: "SET_CONTINENT", payload: id })}
             onClick={() => navigate(`/continent/${id}`)}
           >
             <img src={image} alt={name} />

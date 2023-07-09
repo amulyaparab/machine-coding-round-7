@@ -3,6 +3,8 @@ import { data } from "../Database/data";
 
 export const Country = () => {
   const { continentId, countryId } = useParams();
+  const navigate = useNavigate();
+
   const findContinent = data.continents.find(
     (continent) => continent.id === Number(continentId)
   );
@@ -11,7 +13,6 @@ export const Country = () => {
     (country) => country.id === Number(countryId)
   );
 
-  const navigate = useNavigate();
   return (
     <>
       <i
