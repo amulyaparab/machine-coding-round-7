@@ -6,7 +6,7 @@ export const Continents = () => {
   return (
     <>
       <h1>Welcome to Trip Advisor</h1>
-      <h2 className="purple">Top Continents for your next holiday</h2>
+      <h2 className="purple heading">Top Continents for your next holiday</h2>
       <div className="list">
         {data.continents.map(({ id, name, image }) => (
           <div

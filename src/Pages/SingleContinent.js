@@ -11,7 +11,9 @@ export const SingleContinent = () => {
   return (
     <>
       <i class="fa-solid fa-arrow-left arrow" onClick={() => navigate("/")}></i>
-      <h1>Top Countries in {findContinent?.name} for your next holiday</h1>
+      <h1 className="heading">
+        Top Countries in {findContinent?.name} for your next holiday
+      </h1>
       <div className="list">
         {findContinent.countries.map(({ id, name, image }) => (
           <div

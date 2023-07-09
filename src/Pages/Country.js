@@ -18,7 +18,9 @@ export const Country = () => {
         class="fa-solid fa-arrow-left arrow"
         onClick={() => navigate(`/continent/${findContinent.id}`)}
       ></i>
-      <h1>Top Places in {findCountry?.name} for your next holiday</h1>
+      <h1 className="heading">
+        Top Places in {findCountry?.name} for your next holiday
+      </h1>
       <div className="list">
         {findCountry.destinations.map(({ id, name, image }) => (
           <div

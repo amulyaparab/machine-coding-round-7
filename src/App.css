@@ -59,6 +59,7 @@
   margin: auto;
   text-align: left;
   gap: 2rem;
+  align-items: center;
 }
 .image {
   width: 300px;
@@ -94,4 +95,8 @@ a {
   top: 1.5rem;
   left: 2rem;
   cursor: pointer;
+}
+.heading {
+  margin-bottom: 4rem;
+  margin-top: 2rem;
 }

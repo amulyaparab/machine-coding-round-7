@@ -26,7 +26,7 @@ export const DestinationDetail = () => {
           navigate(`/${findContinent.id}/country/${findCountry.id}`)
         }
       ></i>
-      <h1>{findDestination?.name}</h1>
+      <h1 className="heading">{findDestination?.name}</h1>
       <div className="detail">
         <img
           className="image"
