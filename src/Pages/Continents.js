@@ -1,14 +1,12 @@
 import { useNavigate } from "react-router-dom";
-import { useData } from "../Contexts/DataProvider";
 import { data } from "../Database/data";
 
 export const Continents = () => {
-  const { dispatch } = useData();
   const navigate = useNavigate();
   return (
     <>
       <h1>Welcome to Trip Advisor</h1>
-      <p>Top Continents for your next holiday</p>
+      <h2 className="purple">Top Continents for your next holiday</h2>
       <div className="list">
         {data.continents.map(({ id, name, image }) => (
           <div
@@ -17,7 +15,10 @@ export const Continents = () => {
             onClick={() => navigate(`/continent/${id}`)}
           >
             <img src={image} alt={name} />
-            <p>{name}</p>
+            <div className="name-of-place">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>{name}</p>
+            </div>
           </div>
         ))}
       </div>

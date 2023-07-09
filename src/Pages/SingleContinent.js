@@ -18,7 +18,10 @@ export const SingleContinent = () => {
             onClick={() => navigate(`/${findContinent?.id}/country/${id}`)}
           >
             <img src={image} alt={name} />
-            <p>{name}</p>
+            <div className="name-of-place">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>{name}</p>
+            </div>
           </div>
         ))}
       </div>

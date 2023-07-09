@@ -26,7 +26,10 @@ export const Country = () => {
             }
           >
             <img src={image} alt={name} />
-            <p>{name}</p>
+            <div className="name-of-place">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>{name}</p>
+            </div>
           </div>
         ))}
       </div>

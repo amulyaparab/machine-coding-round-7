@@ -41,6 +41,12 @@
   gap: 1rem;
   width: 90%;
   margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.image-divs {
+  position: relative;
+  cursor: pointer;
 }
 .image-divs img {
   width: 300px;
@@ -62,10 +68,23 @@
 span {
   color: #5d3fd3;
   font-weight: bolder;
-  font-size: larger;
+  font-size: large;
 }
 
 a {
   color: blanchedalmond;
   text-decoration: none;
+}
+.purple {
+  color: #5d3fd3;
+  font-weight: bolder;
+}
+.name-of-place {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1rem;
+  font-weight: bolder;
 }
