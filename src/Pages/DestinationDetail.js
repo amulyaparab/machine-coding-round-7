@@ -1,22 +1,31 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { data } from "../Database/data";
 
 export const DestinationDetail = () => {
   const { continentId, countryId, destinationId } = useParams();
+
   const findContinent = data.continents.find(
     (continent) => continent.id === Number(continentId)
   );
-  console.log(findContinent);
+
   const findCountry = findContinent.countries.find(
     (country) => country.id === Number(countryId)
   );
-  console.log(findCountry);
+
   const findDestination = findCountry.destinations.find(
     (destination) => destination.id === Number(destinationId)
   );
 
+  const navigate = useNavigate();
+
   return (
     <>
+      <i
+        class="fa-solid fa-arrow-left arrow"
+        onClick={() =>
+          navigate(`/${findContinent.id}/country/${findCountry.id}`)
+        }
+      ></i>
       <h1>{findDestination?.name}</h1>
       <div className="detail">
         <img

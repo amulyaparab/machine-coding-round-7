@@ -88,3 +88,10 @@ a {
   left: 1rem;
   font-weight: bolder;
 }
+.arrow {
+  font-size: 40px;
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  cursor: pointer;
+}

@@ -6,14 +6,18 @@ export const Country = () => {
   const findContinent = data.continents.find(
     (continent) => continent.id === Number(continentId)
   );
-  console.log(findContinent);
+
   const findCountry = findContinent.countries.find(
     (country) => country.id === Number(countryId)
   );
-  console.log(findCountry);
+
   const navigate = useNavigate();
   return (
     <>
+      <i
+        class="fa-solid fa-arrow-left arrow"
+        onClick={() => navigate(`/continent/${findContinent.id}`)}
+      ></i>
       <h1>Top Places in {findCountry?.name} for your next holiday</h1>
       <div className="list">
         {findCountry.destinations.map(({ id, name, image }) => (
